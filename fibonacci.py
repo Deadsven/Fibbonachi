@@ -1,11 +1,11 @@
-def recur_fibo(n):
-    if n <= 1:
-        return n
+def recur_fib(fib_num):
+    if fib_num <= 1:
+        return fib_num
     else:
-        return(recur_fibo(n-1) + recur_fibo(n-2))
+        return(recur_fib(fib_num-1) + recur_fib(fib_num-2))
 
-nterms = input ("Enter number of fibonacci: ")
-nterms = int(nterms)
+fib_length = input ("Enter number of fibonacci: ")
+fib_length = int(fib_length)
 
-for i in range(nterms):
-    print(recur_fibo(i))
+for i in range(fib_length):
+    print(recur_fib(i))

@@ -1,12 +1,12 @@
 #!/bin/bash
 echo -n "What should be the fibonacci limit ? "
-read n
-first=0
-second=1
-for (( i = 0; i < n; i++ )); do
-	echo -n "$first "
-	ans=$(($first+$second))
-	second=$first
-	first=$ans
+read fib_length
+fib_num1=0
+fib_num2=1
+for (( i = 0; i < fib_length; i++ )); do
+	echo -n "$fib_num1 "
+	fib_res=$(($fib_num1+$fib_num2))
+	fib_num2=$fib_num1
+	fib_num1=$fib_res
 done
 echo ""
